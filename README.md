@@ -4,7 +4,9 @@
 
 > Built for the *Build What's Next with PayPal and AI* hackathon. Everything runs on the PayPal **sandbox**; no real money moves.
 
-**Demo video:** _add your YouTube link here_
+**Live demo:** <https://handshake-p8f2.onrender.com> (free hosting: the first load after idle can take ~60s). PayPal sandbox buyer for checkout: `sb-hgk6053607699@personal.example.com` / `6j-b8]}F`
+
+**Demo video:** <https://youtu.be/fNr5N_0QeT8>
 
 ![Landing page](docs/landing.png)
 
