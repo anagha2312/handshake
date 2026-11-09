@@ -1,0 +1,9 @@
+.env
+node_modules/
+dist/
+data/
+uploads/
+test-results/
+recordings/
+*.log
+e2e-failure.png

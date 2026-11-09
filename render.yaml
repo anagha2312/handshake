@@ -1,0 +1,28 @@
+# One-click deploy: Render dashboard > New > Blueprint > pick this repo, then fill the secret env vars.
+services:
+  - type: web
+    name: handshake
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: PAYPAL_ENV
+        value: sandbox
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SANDBOX_CLIENT_EMAIL
+        sync: false
+      - key: SANDBOX_FREELANCER_EMAIL
+        sync: false
+      - key: PAYPAL_WEBHOOK_ID
+        sync: false
